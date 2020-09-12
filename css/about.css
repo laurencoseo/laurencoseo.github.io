@@ -1,0 +1,14 @@
+.about-section {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgb(151, 151, 151);
+    margin: 50px 20% 0px 20%;
+}
+
+.resume {
+    margin: 20px 20% 0px 20%;
+    padding-bottom: 6rem;
+}
+
+.resume h2 {
+    text-align: center;
+}
