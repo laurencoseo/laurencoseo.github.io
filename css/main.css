@@ -21,7 +21,7 @@ header {
 
 .topnav {
     color: #000;
-    width: 70%;
+    width: 60%;
     padding: 14px 16px;
     text-decoration: none;
     background-position: top;
@@ -38,6 +38,7 @@ header {
 
 #name-left a:hover {
     text-decoration: none;
+    color: #000;
 }
 
 .topnav-right {
@@ -72,14 +73,20 @@ header {
     padding: 5px;
 }
 
+a {
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+}
+
 .topnav-right a:hover {
     color: #000;
 }
 
-#active {
+/* #active {
     border: 1px solid #000;
     color: #000;
-}
+} */
 
 .container {
     min-height: 100vh;
@@ -94,15 +101,15 @@ header {
 .blurb {
     /* display: inline-block;
     width: 45%; */
-    overflow: auto;
+    overflow: visible;
     /* padding-bottom: 100px; */
-    width: 59%;
+    width: 66%;
     display: inline-block;
     vertical-align: top;
 }
 
 .picture {
-    width: 40%;
+    width: 33%;
     display: inline-block;
 }
 
@@ -123,14 +130,17 @@ h1 {
 img {
     /* I want it to float next to text */
     /* display: inline-block; */
-    float: right;
-    width: 50%;
+    float: left;
+    /* width: 90%; */
     max-width: 100%;
     height: auto;
-    border-radius: 50%;
     /* margin-left: auto;
     margin-right: auto; */
     /* padding: 20px; */
+}
+
+.pic-circle img {
+    border-radius: 50%;
 }
 
 #footer {
@@ -191,3 +201,4 @@ p {
     padding: 20px 0 10px 0;
     font-size: 1.2em;
 }
+
