@@ -11,6 +11,7 @@ html, body {
 
 body {
     font-family: Verdana;
+    color: rgb(134, 134, 134);
     /* margin: 20px auto 0px auto; */
 }
 
@@ -194,7 +195,6 @@ footer ul li {
 p {
     font-size: 1.3em;
     line-height: 1.4em;
-    color: #333; 
 }
 
 .social {
