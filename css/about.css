@@ -12,3 +12,7 @@
 .resume h2 {
     text-align: center;
 }
+
+.blurb li {
+    list-style: none;
+}
