@@ -12,6 +12,7 @@ html, body {
 body {
     font-family: 'Montserrat', sans-serif;
     color: rgb(134, 134, 134);
+    font-size: 18px;
     /* margin: 20px auto 0px auto; */
 }
 
@@ -187,6 +188,9 @@ footer ul li {
     text-decoration: none;
     padding: 5px;
 }
+
+#footer i {
+    font-size: 1.5em;
 
 #footer i:hover {
     color: #000;
