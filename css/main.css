@@ -285,3 +285,10 @@ p {
         display: inline-block;
     }
 }
+
+/* For Life Coming Soon Page */
+.message {
+                text-align: center;
+                padding: 100px 0;
+
+            }
