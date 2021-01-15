@@ -141,22 +141,18 @@ body {
 }
 
 .content-wrapper {
-    margin: 5% 10% 0px 10%;
+    margin: 7% 10% 0px 10%;
 }
 
 /* Text Content */
 .blurb {
-    /* display: inline-block;
-    overflow: visible;
-    /* padding-bottom: 100px; */
-    /* width: 66%; */
     display: block;
     vertical-align: top;
+    padding-bottom: 25px;
+    /* min-width: 550px; */
 }
 
 .picture {
-    /* width: 33%; */
-    height: 250px;
     display: flex;
     justify-content: center;
 }
@@ -187,8 +183,20 @@ img {
     /* padding: 20px; */
 }
 
-.pic-circle img {
+.rounded img {
     border-radius: 15%;
+}
+
+.site {
+    margin-top: 30px;
+    /* text-align: right; */
+    font-size: 0.75em;
+}
+
+.site a {
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
 }
 
 /* Footer Section */
@@ -233,7 +241,7 @@ footer ul li {
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.4em;
     font-family: 'Open Sans', sans-serif;
 }
