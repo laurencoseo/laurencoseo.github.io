@@ -172,6 +172,12 @@ h1 {
     font-weight: normal;
 }
 
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+    font-family: 'Open Sans', sans-serif;
+}
+
 img {
     /* I want it to float next to text */
     /* display: inline-block; */
@@ -257,12 +263,6 @@ footer ul li {
     color: #000;
 }
 
-p {
-    font-size: 1.2em;
-    line-height: 1.4em;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .social {
     padding: 15px 0 10px 0;
     font-size: 1.2em;
@@ -291,17 +291,24 @@ p {
     }
   } 
 
-/* Content-wrapper Styling */
+/* Text */
+@media screen and (min-width: 420px) {
+    p {
+        font-size: 1.2em;
+    }
 
-@media screen and (min-width: 650px) {
+/* Content-wrapper Styling */
+@media screen and (min-width: 769px) {
     .content-wrapper {
         margin: 50px 20% 0px 20%;
     }
 }
 
-@media screen and (min-width: 650px) {
+/* Section Styling */
+@media screen and (min-width: 900px) {
     .blurb {
-        width: 60%;
+        width: 55%;
+        margin-right: 50px;
         display: inline-block;
     }
 
