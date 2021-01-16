@@ -22,6 +22,21 @@
     padding-bottom: 20px;
 }
 
+.animate {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 5s;
+    animation: animat_show 5s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+
 @media screen and (min-width: 1550px) {
     .photo {
         height: 250px;
