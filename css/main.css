@@ -174,7 +174,7 @@ h1 {
 img {
     /* I want it to float next to text */
     /* display: inline-block; */
-    float: left;
+    /* float: left; */
     /* width: 90%; */
     max-width: 100%;
     height: auto;
