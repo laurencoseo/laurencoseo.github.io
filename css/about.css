@@ -1,7 +1,7 @@
 .about li {
     margin-left: 40px;
     padding-bottom: 10px;
-    font-size: 1.15em;
+    font-size: 1em;
 }
 
 .photo {
@@ -37,6 +37,11 @@
     100%{opacity:1}
 }
 
+@media screen and (min-width: 420px) {
+    .about li {
+        font-size: 1.2em;
+}
+    
 @media screen and (min-width: 1550px) {
     .photo {
         height: 250px;
