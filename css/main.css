@@ -153,8 +153,9 @@ body {
 }
 
 .picture {
-    display: flex;
-    justify-content: center;
+    display: block;
+    width: 100%;
+    height: 275px;
 }
 
 #intro {
@@ -177,8 +178,10 @@ img {
     /* float: left; */
     /* width: 90%; */
     max-width: 100%;
-    width: 275px;
+    width: 300px;
     height: auto;
+    margin: 0 auto;
+    display: block;
     /* margin-left: auto;
     margin-right: auto; */
     /* padding: 20px; */
