@@ -58,4 +58,8 @@
         width: auto;
         padding-bottom: 0;
     }
+    
+     .animate {
+        visibility: visible;
+    }
 }
