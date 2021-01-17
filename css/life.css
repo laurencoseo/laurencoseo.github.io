@@ -1,0 +1,25 @@
+.container {
+    max-width: none;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.shrink {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.carousel{
+    width:50%;
+    margin: 0 auto;
+  }
+
