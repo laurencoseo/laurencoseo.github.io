@@ -1,0 +1,44 @@
+.container {
+    max-width: none;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.shrink {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.carousel{
+    width:90%;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1100px) {    
+    .shrink {
+        width: 70%;  
+    }
+    
+    .carousel{
+        width:70%;
+    }
+}
+
+@media screen and (min-width: 1500px) {    
+    .shrink {
+        width: 50%;  
+    }
+    
+    .carousel{
+        width:50%;
+    }
+}
