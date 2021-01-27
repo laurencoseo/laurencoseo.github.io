@@ -2,7 +2,10 @@
 layout: default
 title: Lauren Coseo's Blog
 ---
-	<div class="content-wrap">
+
+<div class="main">
+        <div class="content-wrapper">
+		
 		<h1>{{ page.title }}</h1>
 		<ul class="posts">
 
@@ -10,6 +13,8 @@ title: Lauren Coseo's Blog
 		    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 		  {% endfor %}
 		</ul>
-	</div>													
+		
+ 	</div><!-- /.content-wrapper-->
+</div><!-- /.main-->												
 														 
 														 
