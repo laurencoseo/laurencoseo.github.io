@@ -20,11 +20,12 @@ body {
 /* Header and Nav Bar */
 .header {
     background: #FFEED6;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 10; */
     width: 100%;
     height: 61px;
+    min-width: 265px;
 }
 
 .topnav {
@@ -127,16 +128,19 @@ body {
 .container {
     position: relative;
     min-height: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
 }
 
 .container:after {
     content: "";
     display: block;
-    height: 90px;
+    height: 80px;
 }
 
 .main {
-    padding-top: 61px;
+    /* padding-top: 61px; */
     padding-bottom: 105px;
 }
 
@@ -153,6 +157,8 @@ body {
 }
 
 .picture {
+    /* width: 33%; */
+    /* height: 250px; */
     display: block;
     width: 100%;
     height: 275px;
@@ -161,11 +167,11 @@ body {
 #intro {
     font-size: 1.8em;
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 
-h1 {
+.blurb h1 {
     /* text-align: left; */
     /* padding-top: 10px; */
     font-size: 1.2em;
@@ -180,7 +186,6 @@ p {
 
 img {
     /* I want it to float next to text */
-    /* display: inline-block; */
     /* float: left; */
     /* width: 90%; */
     max-width: 100%;
@@ -188,10 +193,12 @@ img {
     height: auto;
     margin: 0 auto;
     display: block;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* padding: 20px; */
 }
+
+/* .center {
+    display: block;
+    margin: 0 auto;
+} */
 
 .rounded img {
     border-radius: 15%;
@@ -207,19 +214,6 @@ img {
     text-decoration: none;
     color: blue;
     text-transform: uppercase;
-}
-
-/* Site Info Page - CSS Styling */
-.site-info li {
-    list-style-type: square;
-    margin-left: 30px;
-    line-height: 1.8em;
-}
-
-.site-header {
-    font-weight: normal;
-    font-size: 1.2em;
-    padding-bottom: 20px;
 }
 
 /* Footer Section */
@@ -245,7 +239,6 @@ footer ul li {
     display: inline;
     margin-right: 20px;
 }
-
 
 .footer a {
     margin-left: 10px;
@@ -317,10 +310,3 @@ footer ul li {
         display: inline-block;
     }
 }
-
-/* For Life Coming Soon Page */
-.message {
-                text-align: center;
-                padding: 100px 0;
-
-            }
