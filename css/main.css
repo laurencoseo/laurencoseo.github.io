@@ -313,3 +313,17 @@ footer ul li {
         display: inline-block;
     }
 }
+
+.site-info li {
+                /* list-style: none; */
+                list-style-type: square;
+                /* list-style-position: inside; */
+                margin-left: 30px;
+                line-height: 2em;
+            }
+
+            .site-header {
+                font-weight: normal;
+                font-size: 1.2em;
+                padding-bottom: 20px;
+            }
