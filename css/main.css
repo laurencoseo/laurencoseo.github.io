@@ -168,6 +168,7 @@ body {
     font-size: 1.8em;
     text-align: left;
     padding-bottom: 20px;
+    font-weight: bold;
 }
 
 
@@ -176,6 +177,10 @@ body {
     /* padding-top: 10px; */
     font-size: 1.2em;
     font-weight: normal;
+}
+
+.blurb p {
+    margin-bottom: 0;
 }
 
 p {
