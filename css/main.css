@@ -19,13 +19,15 @@ body {
 
 /* Header and Nav Bar */
 .header {
-    background: #FFEED6;
-    /* position: fixed;
-    top: 0;
-    z-index: 10; */
+    background: white;
+    box-shadow: 0px 1px 4px rgb(156, 156, 156);
     width: 100%;
     height: 61px;
     min-width: 265px;
+    
+    /* position: fixed;
+    top: 0;
+    z-index: 10; */
 }
 
 .topnav {
