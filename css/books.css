@@ -1,47 +1,135 @@
 .main {
+    background-color: rgb(157, 243, 217);
     align-items: center;
 }
 
-.book-cover {
+/* JUMBOTRON STYLING 
+=========================================== */
+.jumbotron {
     width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.banner {
-    background-image: url(../bookshelf.jpg);
-    background-position: 100% 31%;
-    height: 20rem;
-    background-repeat: no-repeat;
+    height: 300px;
+    background-color: hsl(40, 84.39%, 61%);
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    background-size: cover;
-    opacity: 0.75;
+    align-content: center;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
-.list-title {
+.jumbotron-title {
     width: 100%;
-    margin: 0 auto;
-    background: rgba(238, 238, 238, 0.74);
     font-size: 3em;
     font-weight: bold;
     text-align: center;
-    /* padding: 3% 0; */
+    margin-bottom: 40px;
+    color: rgb(243, 241, 241);
+}
+
+.button {
+    width: 150px;
+    height:50px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 20px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color:  rgb(156, 156, 156);
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* why is this so weird? */
+.button:first-of-type {
+    margin-right: 20px;
+}
+
+/* TOP BOOKS SECTION STYLING 
+=========================================== */
+.top-banner {
+    /* width: 100%; */
+    background-color: white;
+    overflow: auto;
+}
+
+h1.top-title {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.top-border {
+    border: 8px solid rgb(92, 179, 90);
+    margin: 40px;
+}
+
+.top-books {
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+}
+
+figcaption {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.book-card img {
+    height: 90%;
+}
+
+/* BOOK LIST STYLING 
+=========================================== */
+
+.book-list {
+    background-color: rgb(92, 174, 197);
+}
+
+.banner-title {
+    width: 100%;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: right;
+    text-transform: lowercase;
+    margin: 0;
+    color: rgb(0, 0, 75);
 }
 
 .books {
-    width: 66%;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 5%;
-    background-color: #FFEED6;
+    /* margin-top: 5%; */
+    background-color: rgb(241, 241, 241);
     padding: 0 3%;
 }
 
-.book-title{
+.book-title {
     font-weight: bold;
-    font-style: italic;
+    /* font-style: italic; */
+    font-size: 1em;
+    margin-bottom: 25px;
+    color: rgb(0, 0, 75);
 }
 
 .author {
@@ -49,18 +137,38 @@
     font-style: normal;
 }
 
-.books p {
-    text-align: center;
-}
-
-.border-radius {
-    border-radius: 25px;
-}
-
-.list-top {
+.book-title:first-of-type {
     padding-top: 3%;
 }
 
-.list-bottom {
+.book-title:last-of-type {
     padding-bottom: 3%;
+}
+
+/* RESPONSIVE STYLING 
+=========================================== */
+
+@media only screen and (min-width: 1000px){
+    .book-title{
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 1445px) {
+    .books {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 5%;
+        padding: 0 3%;
+    }
+
+    .list-title {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .top-books {
+        flex-wrap: nowrap;
+    }
 }
