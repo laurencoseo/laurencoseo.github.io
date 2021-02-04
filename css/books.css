@@ -86,6 +86,11 @@ h1.top-title {
     display: inline-block;
     margin: 0;
     margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.book-card:last-of-type {
+    margin-bottom: 0;
 }
 
 figcaption {
@@ -160,6 +165,10 @@ figcaption {
         position: relative;
         top: 30px;
         left: 30px;
+    }
+    
+    .book-card {
+        margin: 0;
     }
 }
 
