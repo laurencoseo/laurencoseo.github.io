@@ -22,7 +22,7 @@
 
 .jumbotron-title {
     width: 100%;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px;
@@ -107,7 +107,7 @@ figcaption {
 
 .banner-title {
     width: 100%;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     text-align: right;
     text-transform: lowercase;
@@ -116,9 +116,6 @@ figcaption {
 }
 
 .books {
-    position: relative;
-    top: 30px;
-    left: 30px;
     width: 100%;
     margin: 0 auto;
     /* margin-top: 5%; */
@@ -149,6 +146,22 @@ figcaption {
 
 /* RESPONSIVE STYLING 
 =========================================== */
+
+@media only screen and (min-width: 650px){
+    .jumbotron-title {
+        font-size: 3em;
+    }
+
+    .banner-title {
+        font-size: 2em;
+    }
+
+    .books {
+        position: relative;
+        top: 30px;
+        left: 30px;
+    }
+}
 
 @media only screen and (min-width: 1000px){
     .book-title{
