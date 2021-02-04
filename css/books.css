@@ -139,6 +139,7 @@ figcaption {
 .author {
     font-weight: lighter;
     font-style: normal;
+    color: gray;
 }
 
 .book-title:first-of-type {
