@@ -136,12 +136,12 @@ body {
 .container:after {
     content: "";
     display: block;
-    height: 80px;
+    height: 105px;
 }
 
 .main {
     /* padding-top: 61px; */
-    padding-bottom: 105px;
+    padding-bottom: 50px;
 }
 
 .content-wrapper {
