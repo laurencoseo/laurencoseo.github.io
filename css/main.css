@@ -237,6 +237,7 @@ footer ul {
     list-style: none;
     font-weight: bold;
     padding: 15px 0 10px 0;
+    margin: 0;
 }
 
 footer ul li {
@@ -249,11 +250,10 @@ footer li:last-of-type {
 }
 
 .footer a {
-    margin-left: 10px;
     width: 100%;
     color: rgb(151, 151, 151);
     text-decoration: none;
-    padding: 5px;
+    padding: 0px 5px;
 }
 
 .footer i {
