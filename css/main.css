@@ -138,7 +138,7 @@ body {
 .container:after {
     content: "";
     display: block;
-    height: 105px;
+    height: 90px;
 }
 
 .main {
@@ -225,13 +225,12 @@ img {
 .footer {
     /* height: 6rem; */
     box-sizing: border-box;
-    height: 105px;
+    height: 90px;
     width: 100%;
     text-align: center;
     border-top: 1px solid #d5d5d5;
     position: absolute;
     bottom: 0;
-    padding-bottom: 15px;
 }
 
 footer ul {
@@ -243,6 +242,10 @@ footer ul {
 footer ul li {
     display: inline;
     margin-right: 20px;
+}
+
+footer li:last-of-type {
+    margin: 0;
 }
 
 .footer a {
@@ -261,9 +264,10 @@ footer ul li {
     color: #000;
 }
 
-.social {
-    padding: 15px 0 10px 0;
-    font-size: 1.2em;
+.footer p {
+    font-size: 0.8em;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
