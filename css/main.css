@@ -32,7 +32,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    float: right;
+    float: left;
     line-height: 35px;
 }
   
