@@ -6,15 +6,20 @@
     padding: 0;
 }
 
-/* WHAT DOES THIS DO? */
-html, body {
-    height: 100%;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     color: rgb(134, 134, 134);
     font-size: 18px;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
 }
 
 /* Header and Nav Bar */
@@ -24,36 +29,13 @@ body {
     width: 100%;
     height: 63px;
     min-width: 265px;
-    
-    /* position: fixed;
-    top: 0;
-    z-index: 10; */
+    margin-bottom: 50px;
 }
 
 .topnav {
     overflow: hidden;
     float: left;
     line-height: 35px;
-}
-  
-.logo {
-    display: inline-flex;
-    align-items: center;
-}
-
-.logo a {
-    float: left;
-    display: block;
-    color: rgb(151, 151, 151);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'Homemade Apple', 'Montserrat';
-}
-
-.logo a:hover {
-    color: black;
 }
 
 .topnav a {
@@ -64,16 +46,16 @@ body {
     text-decoration: none;
     font-size: 1em;
 }
-  
+
 .topnav a:hover {
     color: black;
 }
-  
+
 .topnav a.active {
     background-color: #fff;
     color:#000;
 }
-  
+
 .topnav .icon {
     display: none;
 }
@@ -82,7 +64,7 @@ body {
 
 /* The Overlay (background) */
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 0;
     position: fixed; /* Stay in place */
@@ -93,94 +75,115 @@ body {
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
     position: relative;
     top: 25%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-  }
+}
 
 /* Container */
 .container {
-    position: relative;
-    min-height: 100%;
-    max-width: none;
-    padding: 0;
-    margin: 0;
+    /*position: relative;*/
+    /*min-height: 100%;*/
+    /*max-width: none;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.container:after {
-    content: "";
-    display: block;
-    height: 90px;
-}
-
-.main {
-    /* padding-top: 61px; */
+.projects {
     padding-bottom: 50px;
 }
 
-.content-wrapper {
-    margin: 7% 10% 0px 10%;
-}
-
-/* Text Content */
-.blurb {
-    display: block;
-    vertical-align: top;
-    padding-bottom: 25px;
-    /* min-width: 550px; */
-}
-
 .picture {
-    /* width: 33%; */
-    /* height: 250px; */
-    display: block;
-    width: 100%;
-    height: 275px;
+    max-width: 100%;
+    height: auto;
 }
 
 #intro {
-    font-size: 1.8em;
+    font-size: 2.5em;
     text-align: left;
-    padding-bottom: 20px;
-    margin-bottom: 0;
     font-weight: bold;
 }
 
+.sm-line {
+    height:5px;
+    width: 50%;
+    border-width:0;
+    background-color: rgb(248, 214, 28);
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
 
-.blurb h1 {
-    /* text-align: left; */
-    /* padding-top: 10px; */
-    font-size: 1.2em;
-    font-weight: normal;
+button {
+    margin-top: 25px;
+    padding: 15px 20px;
+    background-color: rgb(44, 198, 185);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover, .btn:hover {
+    background-color: rgb(42, 175, 164);
+}
+
+.btn {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: rgb(44, 198, 185);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+.tools {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pic-line img {
+    width: 60px;
+    display: inline;
+    margin-right: 10px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
 }
 
 p {
@@ -190,10 +193,16 @@ p {
     margin-bottom: 0;
 }
 
+b {
+    font-weight: bolder;
+    color: rgb(44, 198, 185);
+}
+
+b:hover {
+    color: rgb(42, 175, 164);
+}
+
 img {
-    /* I want it to float next to text */
-    /* float: left; */
-    /* width: 90%; */
     max-width: 100%;
     width: 300px;
     height: auto;
@@ -201,36 +210,40 @@ img {
     display: block;
 }
 
-/* .center {
-    display: block;
+.rounded {
+    border-radius: 15%!important;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.tools hr {
+    height:5px;
+    width: 100%;
+    border-width:0;
+    background-color: rgb(248, 214, 28);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card {
     margin: 0 auto;
-} */
-
-.rounded img {
-    border-radius: 15%;
+    width: 80%;
 }
 
-.site {
-    margin-top: 30px;
-    /* text-align: right; */
-    font-size: 0.75em;
-}
-
-.site a {
-    text-decoration: none;
-    color: blue;
-    text-transform: uppercase;
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 /* Footer Section */
 .footer {
-    /* height: 6rem; */
     box-sizing: border-box;
     height: 90px;
     width: 100%;
     text-align: center;
     border-top: 1px solid #d5d5d5;
-    position: absolute;
     bottom: 0;
 }
 
@@ -274,64 +287,62 @@ footer li:last-of-type {
 
 
 /* Nav Bar - Responsive Styling */
-/* NEED TO CHANGE SO IT IS MOBILE FIRST */
-  
 @media screen and (max-width: 600px) {
     .topnav a {display: none;}
     .topnav a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and
+position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
-  } 
+}
 
 /* Text */
 @media screen and (min-width: 420px) {
-    p {
-        font-size: 1.2em;
+    /*p {*/
+    /*    font-size: 1em;*/
+    /*}*/
+}
+
+@media screen and (max-width: 576px) {
+    .picture {
+        margin-top: 50px;
+    }
+
+    .card {
+        margin-bottom: 30px;
     }
 }
 
 /* Content-wrapper Styling */
 @media screen and (min-width: 769px) {
-    .content-wrapper {
-        margin: 50px 20% 0px 20%;
-    }
+    /*.content-wrapper {*/
+    /*    margin: 50px 20% 0px 20%;*/
+    /*}*/
 }
 
 /* Section Styling */
 @media screen and (min-width: 900px) {
-    .blurb {
-        width: 55%;
-        margin-right: 50px;
-        display: inline-block;
-    }
+    /*.blurb {*/
+    /*    width: 55%;*/
+    /*    margin-right: 50px;*/
+    /*    display: inline-block;*/
+    /*}*/
 
-    .picture {
-        width: 35%;
-        display: inline-block;
-    }
+    /*.picture {*/
+    /*    width: 350px;*/
+    /*    display: inline-block;*/
+    /*}*/
 }
 
-.site-info li {
-                /* list-style: none; */
-                list-style-type: square;
-                /* list-style-position: inside; */
-                margin-left: 30px;
-                line-height: 2em;
-            }
 
-            .site-header {
-                font-weight: normal;
-                font-size: 1.2em;
-                padding-bottom: 20px;
-            }
+
