@@ -8,12 +8,15 @@
 
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     color: rgb(134, 134, 134);
     font-size: 18px;
+    margin: 0 0 100px;
 }
 
 h2 {
@@ -147,7 +150,7 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-button {
+.button {
     margin-top: 25px;
     padding: 15px 20px;
     background-color: rgb(44, 198, 185);
@@ -168,6 +171,23 @@ button:hover, .btn:hover {
     border: 0px;
     border-radius: 5px;
     color: white;
+}
+
+.btn-link {
+    border: 0;
+    color: #000000;
+    padding: 10px 0 5px 10px;
+}
+
+button:focus, .btn-link:focus, .btn-link:hover {
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    cursor: pointer;
 }
 
 .tools {
@@ -193,13 +213,9 @@ p {
     margin-bottom: 0;
 }
 
-b {
+.color {
     font-weight: bolder;
     color: rgb(44, 198, 185);
-}
-
-b:hover {
-    color: rgb(42, 175, 164);
 }
 
 img {
@@ -237,6 +253,11 @@ img {
     margin-bottom: 20px;
 }
 
+.card-header {
+    padding: 0;
+
+}
+
 /* Footer Section */
 .footer {
     box-sizing: border-box;
@@ -245,6 +266,7 @@ img {
     text-align: center;
     border-top: 1px solid #d5d5d5;
     bottom: 0;
+    position: absolute;
 }
 
 footer ul {
